@@ -37,6 +37,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [SiswaController::class, 'index'])->name('siswa.index');
 Route::get('/riwayat', [SiswaController::class, 'riwayat'])->name('riwayat');
+Route::get('/cari', [SiswaController::class, 'cari'])->name('cari');
 Route::get('/result', [SiswaController::class, 'result'])->name('result');
 Route::get('/pelanggaran/{aksi}', [PelanggaranController::class, 'pelanggaran'])->name('pelanggaran');
 Route::post('/pelanggaran/store/aksi', [PelanggaranController::class, 'storeAksi'])->name('pelanggaran.store.aksi');
